@@ -5,7 +5,7 @@ use termion::color;
 
 fn main() {
     let (width, _) = terminal_size().unwrap();
-    let line_bar = "█".repeat(width as usize - 2);
+    let line_bar = "█".repeat(width as usize);
 
     let flag_blue = color::Fg(color::LightBlue);
     let flag_pink = "\x1B[38;5;219m";
